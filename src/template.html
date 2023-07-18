@@ -1,464 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Put here your site title -->
-        <title>Abdulrahman Elsharqawi | Portfolio</title>
-        <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-        <meta
-            name="keywords"
-            content="sharqawiDev, Abdulrahman Elsharqawi, JavaScript, portfolio"
-        />
-        <!-- Improve your SEO by adding a small descrption of you -->
-        <meta name="description" content="Abdulrahman Elsharqawi | Portfolio" />
+    <!-- Put here your site title -->
+    <title>Abdulrahman Elsharqawi | Portfolio</title>
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta
+      name="keywords"
+      content="sharqawiDev, Abdulrahman Elsharqawi, JavaScript, portfolio"
+    />
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Abdulrahman Elsharqawi | Portfolio" />
 
-        <!-- Required librarys -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script>
-            ScrollReveal({ reset: false });
-        </script>
+    <!-- Required librarys -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
 
-        <!-- Remove this script once you setup your custom portfolio -->
-        <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
-    </head>
+    <!-- Remove this script once you setup your custom portfolio -->
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+  </head>
 
-    <!-- Follow the HTML instructions to create your stunning portfolio website -->
-    <body>
-        <div id="top"></div>
+  <!-- Follow the HTML instructions to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
 
-        <!-- **** Hero Section **** -->
-        <div id="hero" class="jumbotron">
-            <div class="container">
-                <a href="/">
-                    <img class="logo" alt="logo" src="./assets/logo.gif" />
-                </a>
-                <h1 class="hero-title" class="load-hidden">
-                    Hey, I'm
-                    <span class="text-color-main">Abdulrahman</span>
-                    <br />
-                    <p>I code to build products and solve problems</p>
-                </h1>
-                <p class="hero-cta" class="load-hidden">
-                    <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
-                </p>
+    <!-- **** Hero Section **** -->
+    <div id="hero" class="jumbotron">
+      <div class="container">
+        <a href="/">
+          <img class="logo" alt="logo" src="./assets/logo.gif" />
+        </a>
+        <h1 class="hero-title" class="load-hidden">
+          Hey, I'm
+          <span class="text-color-main">Abdulrahman</span>
+          <br />
+          <p>I code to build products and solve problems</p>
+        </h1>
+        <p class="hero-cta" class="load-hidden">
+          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+        </p>
+      </div>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="./assets/profile.jpg"
+                alt="Profile Image"
+              />
             </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+              <p class="about-wrapper__info-text">
+                My name is <b>Abdulrahman Elsharqawi</b>. Currently, I work as a
+                <b>Software Engineer II</b> at <b>Mozn</b>, a Saudi FinTech
+                company.
+              </p>
+              <p class="about-wrapper__info-text">
+                I have a strong understanding of HTML, CSS, JavaScript (ES6+),
+                and React. I am also proficient in other web
+                technologies/languages, such as Python, NodeJS, Typescript,
+                Cypress, Jest, WebPack, Tailwind, and React Native. I have a
+                proven track record of delivering high-quality code on time and
+                within budget. I am also a strong advocate for user experience
+                (UX) design principles. I believe that a well-designed user
+                interface can make a significant difference in the success of a
+                web application.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="https://drive.google.com/file/d/155eIF7hHY3zSZzgVKM9zcrwV04ERr3my/view?usp=sharing"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
-        <!-- /END Hero Section -->
+      </div>
+    </section>
+    <!-- /END About Section -->
 
-        <!-- **** About Section **** -->
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title">About me</h2>
-                <div class="row about-wrapper">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="about-wrapper__image">
-                            <img
-                                class="img-fluid rounded shadow-lg"
-                                height="auto"
-                                width="300px"
-                                src="./assets/profile.jpg"
-                                alt="Profile Image"
-                            />
-                        </div>
-                    </div>
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
 
-                    <div class="col-md-6 col-sm-12">
-                        <div class="about-wrapper__info">
-                            <p class="about-wrapper__info-text">
-                                My name is <b>Abdulrahman Elsharqawi</b>.
-                                Currently, I work as a
-                                <b style="color: black">Front-End Developer</b>
-                                at
-                                <a href="https://www.alinma.com">
-                                    <b style="color: #010037; font-size: 20px"
-                                        >Mozn
-                                    </b>
-                                    <img
-                                        alt=""
-                                        src="./assets/alinma.png"
-                                        style="width: 23px"
-                                    />
-                                </a>
-                            </p>
-                            <p class="about-wrapper__info-text">
-                                Currently, my main focus is to study and analyze
-                                how can we create mature and useful FinTech
-                                products that plays an important role in the
-                                Saudi financial market. Not to mention that my
-                                technical background allows me to use the latest
-                                technologies in the process of building these
-                                products.For example, I use technologies like
-                                <b>JavaScript</b>, <b>React Native</b>, ans
-                                <b>NodeJS</b> to build a complete solutions that
-                                can add value to people's life.
-                            </p>
-                            <p class="about-wrapper__info-text">
-                                I'm specialized in building <b>websites</b>,
-                                <b>mobile apps</b>, and <b>IoT Solutions</b>.
-                            </p>
-                            <span class="d-flex mt-3">
-                                <a
-                                    target="_blank"
-                                    class="cta-btn cta-btn--resume"
-                                    href="https://drive.google.com/file/d/149n5Uf37R0RqMiktDAECQrfyOPZdMZrz/view?usp=sharing"
-                                >
-                                    View Resume
-                                </a>
-                            </span>
-                        </div>
-                    </div>
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Focal</h3>
+                <div>
+                  <p class="mb-4">
+                    FOCAL by Mozn is a suite of products that leverage our
+                    powerful AI and machine learning technology to answer the
+                    challenges of AML compliance and Fraud Prevention in
+                    Emerging Markets.
+                  </p>
                 </div>
-            </div>
-        </section>
-        <!-- /END About Section -->
-
-        <!-- **** Projects Section **** -->
-        <section id="projects">
-            <div class="container">
-                <div class="project-wrapper">
-                    <h2 class="section-title dark-blue-text">Projects</h2>
-
-                    <!-- Each .row is a project -->
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="project-wrapper__text">
-                                <h3 class="project-wrapper__text-title">
-                                    Nana Baqala Helper
-                                </h3>
-                                <div>
-                                    <p class="mb-4">
-                                        Nana Baqala Helper is an IoT solution
-                                        that aims to increase the availability
-                                        of items in the store. It is cheap,
-                                        compact, and easy to deliver.
-                                    </p>
-                                </div>
-                                <a
-                                    target="_blank"
-                                    class="cta-btn cta-btn--hero"
-                                    href="mailto:sharqawi.dev@gmail.com"
-                                >
-                                    Contact Me to Know More
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12">
-                            <div class="project-wrapper__image">
-                                <a target="_blank">
-                                    <div
-                                        data-tilt
-                                        class="thumbnail rounded"
-                                        style="
-                                            display: flex;
-                                            width: 70%;
-                                            justify-content: space-between;
-                                        "
-                                    >
-                                        <img
-                                            class="img-fluid baqala"
-                                            src="./assets/baqala helper.png"
-                                        />
-                                        <img
-                                            class="img-fluid baqala"
-                                            src="./assets/baqala_2.jpg"
-                                        />
-                                        <img
-                                            class="img-fluid baqala"
-                                            src="./assets/baqala_3.jpg"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /END Project -->
-                    <!-- Each .row is a project -->
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="project-wrapper__text">
-                                <h3 class="project-wrapper__text-title">
-                                    <a
-                                        target="_blank"
-                                        href="https://github.com/sharqawiDev/rn_serial"
-                                    >
-                                        Nana Baqala Helper App
-                                    </a>
-                                </h3>
-                                <div>
-                                    <p class="mb-4">
-                                        Baqala Helper Mobile App React Native
-                                        application that uses hardware-serial
-                                        protocol to connect to and control
-                                        baqala helper devices
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12">
-                            <div class="project-wrapper__image">
-                                <a target="_blank">
-                                    <div
-                                        data-tilt
-                                        class="thumbnail rounded"
-                                        style="
-                                            display: flex;
-                                            width: 70%;
-                                            justify-content: space-between;
-                                        "
-                                    >
-                                        <img
-                                            class="img-fluid baqala"
-                                            src="./assets/baqala_app.jpg"
-                                        />
-                                        <img
-                                            class="img-fluid baqala"
-                                            src="./assets/baqala_app_2.jpg"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /END Project -->
-                    <!-- Each .row is a project -->
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="project-wrapper__text">
-                                <h3 class="project-wrapper__text-title">
-                                    <a
-                                        target="_blank"
-                                        href="https://docs.google.com/presentation/d/1MwAX94bvZaDT-TRr3pBULDkRAVwhWVX2/edit?usp=sharing&ouid=104501960388756624197&rtpof=true&sd=true"
-                                    >
-                                        AZM
-                                    </a>
-                                </h3>
-                                <div>
-                                    <p class="mb-4">
-                                        AZM is a real-time system that help
-                                        farmers monitor biometrics for their
-                                        agriculture products. It also can detect
-                                        future diseases and soil fertility
-                                        levels. <b>Proudly</b>, it won the third
-                                        place in Al-Qasim Hackathon for
-                                        agricultural technologies
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12">
-                            <div class="project-wrapper__image">
-                                <a target="_blank">
-                                    <div
-                                        data-tilt
-                                        class="thumbnail rounded"
-                                        style="
-                                            display: flex;
-                                            width: 70%;
-                                            justify-content: space-between;
-                                        "
-                                    >
-                                        <img
-                                            class="img-fluid"
-                                            style="margin-right: 10px"
-                                            src="./assets/azm.png"
-                                        />
-                                        <img
-                                            class="img-fluid"
-                                            src="./assets/azm_hackathon.jpeg"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /END Project -->
-
-                    <!-- Each .row is a project -->
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="project-wrapper__text">
-                                <h3 class="project-wrapper__text-title">
-                                    <a
-                                        target="_blank"
-                                        href="https://github.com/sharqawiDev/clima"
-                                    >
-                                        Clima - IOS Weather App
-                                    </a>
-                                </h3>
-                                <div>
-                                    <p class="mb-4">
-                                        Clima is a weather app written in
-                                        <b>Swift</b> that uses OpenWeather API
-                                        to fetch and view weather data for the
-                                        user
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12">
-                            <div class="project-wrapper__image">
-                                <a target="_blank">
-                                    <div
-                                        data-tilt
-                                        class="thumbnail rounded"
-                                        style="
-                                            display: flex;
-                                            width: 70%;
-                                            justify-content: space-between;
-                                        "
-                                    >
-                                        <img
-                                            class="img-fluid baqala"
-                                            src="./assets/cilma.png"
-                                        />
-                                        <img
-                                            class="img-fluid baqala"
-                                            src="./assets/cilma_2.png"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /END Project -->
-
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="project-wrapper__text">
-                                <h3 class="project-wrapper__text-title">
-                                    <a
-                                        target="_blank"
-                                        href="https://github.com/sharqawiDev/BLE"
-                                    >
-                                        Nana BLE Scanner
-                                    </a>
-                                </h3>
-                                <div>
-                                    <p class="mb-4">
-                                        Nana BLE Scanner is a React Native
-                                        mobile application that uses Bluetooth
-                                        Low-Energy protocol to connect to Baqala
-                                        Helper devices and configure them and
-                                        read their data.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12">
-                            <div
-                                class="project-wrapper__image"
-                                style="width: 45%; height: 500px"
-                            >
-                                <a target="_blank">
-                                    <div
-                                        data-tilt
-                                        class="thumbnail rounded"
-                                        style="display: flex; width: 70%"
-                                    >
-                                        <img
-                                            class="img-fluid"
-                                            style="height: 500px"
-                                            src="./assets/ble_scanner.jpg"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /END Project -->
-                    <!-- Each .row is a project -->
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="project-wrapper__text">
-                                <h3 class="project-wrapper__text-title">
-                                    <a
-                                        target="_blank"
-                                        href="https://github.com/sharqawiDev/Project4-FSND"
-                                    >
-                                        Item Catalog
-                                    </a>
-                                </h3>
-                                <div>
-                                    <p class="mb-4">
-                                        Item Catalog is a blog-like website,
-                                        where users can add items, modify them,
-                                        and delete them (All CRUD operations).
-                                        In this project, I applied all
-                                        principles I learned in the Full-Stack
-                                        Nanodegree from Udacity. The project has
-                                        user authentication, email verification,
-                                        third-party login, JSON endpoints. The
-                                        project also was deployed on an Apache
-                                        server hosted on GCP.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12">
-                            <div class="project-wrapper__image">
-                                <a target="_blank">
-                                    <div data-tilt class="thumbnail rounded">
-                                        <img
-                                            class="img-fluid"
-                                            src="./assets/item catalog.png"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /END Project -->
-                </div>
-            </div>
-        </section>
-        <!-- /END Projects Section -->
-
-        <!-- **** Contact Section **** -->
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact-wrapper">
-                    <p class="contact-wrapper__text">Let's Build Something</p>
-                    <a
-                        target="_blank"
-                        class="cta-btn cta-btn--resume"
-                        href="mailto:sharqawi.dev@gmail.com"
-                        >Send Email</a
-                    >
-                </div>
-            </div>
-        </section>
-        <!-- /END Contact Section -->
-
-        <!-- **** Footer Section **** -->
-        <footer class="footer navbar-static-bottom">
-            <div class="container">
-                <a href="#top" class="back-to-top">
-                    <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+                <a
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="mailto:sharqawi.dev@gmail.com"
+                >
+                  Contact Me to Know More
                 </a>
-                <div class="social-links">
-                    <a href="https://twitter.com/sharqawiDev" target="_blank">
-                        <i class="fa fa-twitter fa-inverse"></i>
-                    </a>
-                    <a
-                        href="https://linkedin.com/in/sharqawiDev"
-                        target="_blank"
-                    >
-                        <i class="fa fa-linkedin fa-inverse"></i>
-                    </a>
-                    <a href="https://github.com/sharqawiDev" target="_blank">
-                        <i class="fa fa-github fa-inverse"></i>
-                    </a>
-                </div>
+              </div>
             </div>
-        </footer>
-        <!-- /END Footer Section -->
-    </body>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a target="_blank">
+                  <div
+                    data-tilt
+                    class="thumbnail rounded"
+                    style="
+                      display: flex;
+                      width: 70%;
+                      justify-content: space-between;
+                    "
+                  >
+                    <img
+                      src="https://uploads-ssl.webflow.com/62849339887c40eb985ab557/62849408fd964bd52b02b8f5_Group%20145.webp"
+                      srcset="
+                        https://uploads-ssl.webflow.com/62849339887c40eb985ab557/62849408fd964bd52b02b8f5_Group%2520145-p-500.webp 500w,
+                        https://uploads-ssl.webflow.com/62849339887c40eb985ab557/62849408fd964bd52b02b8f5_Group%20145.webp         711w
+                      "
+                      width="725"
+                      sizes="(max-width: 991px) 63vw, 488.74200439453125px"
+                      alt=""
+                      class="brix---img-floating-left"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">AlinmaPay</h3>
+                <div>
+                  <p class="mb-4">
+                    AlinmaPay is an e-wallet application that allows users to
+                    pay for their purchases using their mobile phones. It also
+                    allows users to transfer money to other users and pay their
+                    bills.
+                  </p>
+                </div>
+                <a
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="mailto:sharqawi.dev@gmail.com"
+                >
+                  Contact Me to Know More
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a target="_blank">
+                  <div
+                    data-tilt
+                    class="thumbnail rounded"
+                    style="
+                      display: flex;
+                      width: 70%;
+                      justify-content: space-between;
+                    "
+                  >
+                    <img
+                      src="https://www.alinmapay.com.sa/wps/wcm/connect/alinmapayNew/8115457e-cefb-4535-bf6b-e9175afc9fc3/landing-screen-top-en.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_MA161940LO1D80QLBBCSB230S0-8115457e-cefb-4535-bf6b-e9175afc9fc3-o9uZCYS"
+                      class="mw-100"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Nana Baqala Helper</h3>
+                <div>
+                  <p class="mb-4">
+                    Nana Baqala Helper is an IoT solution that aims to increase
+                    the availability of items in the store. It is cheap,
+                    compact, and easy to deliver.
+                  </p>
+                </div>
+                <a
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="mailto:sharqawi.dev@gmail.com"
+                >
+                  Contact Me to Know More
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a target="_blank">
+                  <div
+                    data-tilt
+                    class="thumbnail rounded"
+                    style="
+                      display: flex;
+                      width: 70%;
+                      justify-content: space-between;
+                    "
+                  >
+                    <img
+                      class="img-fluid baqala"
+                      src="./assets/baqala helper.png"
+                    />
+                    <img class="img-fluid baqala" src="./assets/baqala_2.jpg" />
+                    <img class="img-fluid baqala" src="./assets/baqala_3.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  <a
+                    target="_blank"
+                    href="https://github.com/sharqawiDev/rn_serial"
+                  >
+                    Nana Baqala Helper App
+                  </a>
+                </h3>
+                <div>
+                  <p class="mb-4">
+                    Baqala Helper Mobile App React Native application that uses
+                    hardware-serial protocol to connect to and control baqala
+                    helper devices
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a target="_blank">
+                  <div
+                    data-tilt
+                    class="thumbnail rounded"
+                    style="
+                      display: flex;
+                      width: 70%;
+                      justify-content: space-between;
+                    "
+                  >
+                    <img
+                      class="img-fluid baqala"
+                      src="./assets/baqala_app.jpg"
+                    />
+                    <img
+                      class="img-fluid baqala"
+                      src="./assets/baqala_app_2.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/presentation/d/1MwAX94bvZaDT-TRr3pBULDkRAVwhWVX2/edit?usp=sharing&ouid=104501960388756624197&rtpof=true&sd=true"
+                  >
+                    AZM
+                  </a>
+                </h3>
+                <div>
+                  <p class="mb-4">
+                    AZM is a real-time system that help farmers monitor
+                    biometrics for their agriculture products. It also can
+                    detect future diseases and soil fertility levels.
+                    <b>Proudly</b>, it won the third place in Al-Qasim Hackathon
+                    for agricultural technologies
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a target="_blank">
+                  <div
+                    data-tilt
+                    class="thumbnail rounded"
+                    style="
+                      display: flex;
+                      width: 70%;
+                      justify-content: space-between;
+                    "
+                  >
+                    <img
+                      class="img-fluid"
+                      style="margin-right: 10px"
+                      src="./assets/azm.png"
+                    />
+                    <img class="img-fluid" src="./assets/azm_hackathon.jpeg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  <a
+                    target="_blank"
+                    href="https://github.com/sharqawiDev/clima"
+                  >
+                    Clima - IOS Weather App
+                  </a>
+                </h3>
+                <div>
+                  <p class="mb-4">
+                    Clima is a weather app written in
+                    <b>Swift</b> that uses OpenWeather API to fetch and view
+                    weather data for the user
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a target="_blank">
+                  <div
+                    data-tilt
+                    class="thumbnail rounded"
+                    style="
+                      display: flex;
+                      width: 70%;
+                      justify-content: space-between;
+                    "
+                  >
+                    <img class="img-fluid baqala" src="./assets/cilma.png" />
+                    <img class="img-fluid baqala" src="./assets/cilma_2.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  <a target="_blank" href="https://github.com/sharqawiDev/BLE">
+                    Nana BLE Scanner
+                  </a>
+                </h3>
+                <div>
+                  <p class="mb-4">
+                    Nana BLE Scanner is a React Native mobile application that
+                    uses Bluetooth Low-Energy protocol to connect to Baqala
+                    Helper devices and configure them and read their data.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div
+                class="project-wrapper__image"
+                style="width: 45%; height: 500px"
+              >
+                <a target="_blank">
+                  <div
+                    data-tilt
+                    class="thumbnail rounded"
+                    style="display: flex; width: 70%"
+                  >
+                    <img
+                      class="img-fluid"
+                      style="height: 500px"
+                      src="./assets/ble_scanner.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  <a
+                    target="_blank"
+                    href="https://github.com/sharqawiDev/Project4-FSND"
+                  >
+                    Item Catalog
+                  </a>
+                </h3>
+                <div>
+                  <p class="mb-4">
+                    Item Catalog is a blog-like website, where users can add
+                    items, modify them, and delete them (All CRUD operations).
+                    In this project, I applied all principles I learned in the
+                    Full-Stack Nanodegree from Udacity. The project has user
+                    authentication, email verification, third-party login, JSON
+                    endpoints. The project also was deployed on an Apache server
+                    hosted on GCP.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/item catalog.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">Let's Build Something</p>
+          <a
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:sharqawi.dev@gmail.com"
+            >Send Email</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a href="https://twitter.com/sharqawiDev" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a href="https://linkedin.com/in/sharqawiDev" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a href="https://github.com/sharqawiDev" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+  </body>
 </html>
