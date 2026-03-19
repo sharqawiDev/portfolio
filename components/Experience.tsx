@@ -83,7 +83,7 @@ export default function Experience() {
   const experiences: ExperienceItemProps[] = [
     {
       company: "Mozn",
-      role: "Software Engineer III (Promoted from SWE II)",
+      role: "Senior Software Engineer (Promoted twice)",
       period: "Aug 2022 - Present",
       logoUrl: "/assets/mozn-logo.png",
       description: [

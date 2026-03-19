@@ -47,7 +47,7 @@ export default function Hero() {
 
             {/* Title */}
             <h2 className="text-3xl md:text-5xl font-bold text-gray-800 dark:text-gray-200 mb-6">
-              Software Engineer III
+              Senior Software Engineer
             </h2>
 
             {/* Location */}
@@ -83,7 +83,7 @@ export default function Hero() {
                 View My Work
               </a>
               <a
-                href="https://drive.google.com/file/d/1mfkJMaPrYSfBtQUnbeVcoII65DB4BkC6/view?usp=sharing"
+                href="https://drive.google.com/file/d/1vyd08AzLKZkMhKzdxq2DYnla-gMpmFuK/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-600 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
