@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import ScrollReveal from "./ScrollReveal";
 
 interface AchievementProps {
   title: string;
@@ -14,34 +15,38 @@ function AchievementCard({
   description,
   date,
   image,
-}: AchievementProps) {
+  index,
+}: AchievementProps & { index: number }) {
   return (
-    <div className="flex-shrink-0 w-[400px] bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
-      {/* Large Image Area */}
-      <div className="relative w-full h-64 bg-gray-100 dark:bg-gray-700 overflow-hidden">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
+    <ScrollReveal delay={index * 100} direction="up">
+      <div className="group flex-shrink-0 w-full sm:w-auto bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden card-hover">
+        {/* Image */}
+        <div className="relative w-full h-52 bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </div>
 
-      {/* Content */}
-      <div className="p-6">
-        {date && (
-          <span className="inline-block px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full mb-3">
-            {date}
-          </span>
-        )}
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-          {title}
-        </h3>
-        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-          {description}
-        </p>
+        {/* Content */}
+        <div className="p-5">
+          {date && (
+            <span className="inline-block text-[11px] font-mono font-medium text-emerald-600 dark:text-emerald-400 mb-2">
+              {date}
+            </span>
+          )}
+          <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 mb-2 leading-snug">
+            {title}
+          </h3>
+          <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed line-clamp-3">
+            {description}
+          </p>
+        </div>
       </div>
-    </div>
+    </ScrollReveal>
   );
 }
 
@@ -50,7 +55,7 @@ export default function Achievements() {
     {
       title: "Full Stack Developer Bootcamp",
       description:
-        "Mentored aspiring developers through an intensive, hands-on program covering modern web technologies, best practices, and practical project experience. Guided participants in building robust full stack applications and supported their personal and professional growth throughout the bootcamp.",
+        "Mentored aspiring developers through an intensive, hands-on program covering modern web technologies, best practices, and practical project experience.",
       date: "2024",
       image: "/assets/bootcamp.jpeg",
     },
@@ -64,7 +69,7 @@ export default function Achievements() {
     {
       title: "React Nanodegree",
       description:
-        "Udacity Nanodegree program covering React, Redux, and React Native. Focused on developing modern, interactive web and mobile applications using the latest React ecosystem tools and best practices.",
+        "Udacity Nanodegree program covering React, Redux, and React Native. Focused on developing modern, interactive web and mobile applications.",
       date: "2020",
       image: "/assets/React.jpg",
     },
@@ -85,43 +90,50 @@ export default function Achievements() {
   ];
 
   return (
-    <section
-      id="achievements"
-      className="min-h-screen px-4 py-20 overflow-hidden"
-    >
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-          <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Achievements
-          </span>
-        </h2>
-        <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-          A showcase of milestones, awards, and recognitions throughout my
-          professional journey.
-        </p>
-
-        {/* Horizontal Scroll Container */}
-        <div className="relative">
-          {/* Scroll Indicator - Left */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white dark:from-gray-900 to-transparent z-10 pointer-events-none"></div>
-
-          {/* Scroll Indicator - Right */}
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white dark:from-gray-900 to-transparent z-10 pointer-events-none"></div>
-
-          {/* Scrollable Container */}
-          <div className="overflow-x-auto scrollbar-hide pb-4">
-            <div className="flex gap-6 px-4">
-              {achievements.map((achievement, index) => (
-                <AchievementCard key={index} {...achievement} />
-              ))}
-            </div>
+    <section id="achievements" className="px-6 py-24 md:py-32 overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        <ScrollReveal>
+          <div className="mb-16">
+            <span className="text-xs font-mono font-medium text-emerald-600 dark:text-emerald-400 tracking-widest uppercase mb-3 block">
+              Milestones
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+              Achievements
+            </h2>
+            <p className="text-zinc-500 dark:text-zinc-400 max-w-lg">
+              Certifications, awards, and milestones from my professional
+              journey.
+            </p>
           </div>
+        </ScrollReveal>
+
+        {/* Grid layout (switch to scroll container when more items are added) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {achievements.map((achievement, index) => (
+            <AchievementCard key={index} index={index} {...achievement} />
+          ))}
         </div>
 
-        {/* Scroll Hint */}
-        <p className="text-center text-sm text-gray-500 dark:text-gray-500 mt-6">
-          Scroll horizontally to view all achievements
-        </p>
+        {/* Horizontal Scroll Container — hidden for now, enable when more achievements are added */}
+        {false && (
+          <div className="relative">
+            {/* Fade edges */}
+            <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-[var(--background)] to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-[var(--background)] to-transparent z-10 pointer-events-none" />
+
+            <div className="overflow-x-auto scrollbar-hide pb-4 -mx-6 px-6">
+              <div className="flex gap-5">
+                {achievements.map((achievement, index) => (
+                  <AchievementCard key={index} index={index} {...achievement} />
+                ))}
+              </div>
+            </div>
+
+            <p className="text-center text-xs font-mono text-zinc-400 dark:text-zinc-600 mt-8 tracking-wide">
+              Drag to explore
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

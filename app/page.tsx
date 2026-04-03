@@ -1,15 +1,15 @@
-import Hero from '@/components/Hero';
-import Experience from '@/components/Experience';
-import Skills from '@/components/Skills';
-import Achievements from '@/components/Achievements';
-import Projects from '@/components/Projects';
-import Footer from '@/components/Footer';
-import ThemeToggle from '@/components/ThemeToggle';
+import Hero from "@/components/Hero";
+import Experience from "@/components/Experience";
+import Skills from "@/components/Skills";
+import Achievements from "@/components/Achievements";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
-      <ThemeToggle />
+    <main className="min-h-screen bg-[var(--background)] transition-colors duration-300">
+      <Navbar />
       <Hero />
       <Experience />
       <Skills />
